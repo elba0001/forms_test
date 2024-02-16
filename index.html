@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            margin: 3rem;
+        }
+
+
+        form label {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.8rem;
+        }
+
+        textarea {
+            height: 6rem;
+        }
+
+        input[type=submit] {
+            margin-top: 1rem;
+            padding: 3%;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            color: aliceblue;
+        }
+
+        input[type=checkbox] {
+            display: flex;
+            align-self: flex-start;
+            flex-direction: row;
+            margin-top: 1rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form test</h1>
+    <form name="contact">
+        <label for="name">Navn: <input type="text" id="name" name="name"></label>
+        <label for="email">E-mail: <input type="email" id="email" name="email"></label>
+        <label for="message">Melding:</label> <textarea name="message" id="message"></textarea>
+        <label><input type="checkbox" checked="checked" name="remember"> Husk meg </label>
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>
